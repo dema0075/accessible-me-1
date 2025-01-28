@@ -31,26 +31,28 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://picsum.photos/1200/900" class="banner" alt="" role="none">
+      <img src="https://picsum.photos/1200/900" class="banner" alt="">
     </header>
     <main id="main-content" role="main">
       <h2 role="heading">Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner" aria-label="owner info">
-        <h2 role="heading">Meet the owner</h2>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
-        </ul>
-        <h2 role="heading">Address</h2>
+        <h2 role="heading" itemscope itemtype="https://schema.org/Person">Meet the owner</h2>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <span itemprop="name">Name: John Doe</span><br>
+          <span itemprop="joTitle">Title: CEO</span><br>
+          <span itemprop="email">Email: johnjoe@jambox.ca</span><br>
+          <span itemprop="telephone">Phone: 613-000-0000</span>
+        </p>
+        <h2 role="heading" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">Address</h2>
+        <p>
+          <span itemprop="name">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road, </span><br>
+          <span itemprop="addressLocality">Musicville, </span><br>
+          <span itemprop="addressCountry">Danceistan.</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
+          
         </p>
       </div>
       <div id="contact-section">
